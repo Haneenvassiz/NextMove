@@ -2,29 +2,30 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const heroSlides = [
   {
     id: 1,
-    image: "/images/hero section.png",
+    image: "/images/hero section.webp",
     title: "ELITE",
     subtitle: "MANUFACTURING",
   },
   {
     id: 2,
-    image: "/images/hero section 2.png",
+    image: "/images/hero section 2.webp",
     title: "GLOBAL",
     subtitle: "EXPORT HUB",
   },
   {
     id: 3,
-    image: "/images/hero section 3.png",
+    image: "/images/hero section 3.webp",
     title: "PREMIUM",
     subtitle: "QUALITY",
   },
   {
     id: 4,
-    image: "/images/hero section 4.png",
+    image: "/images/hero section 4.webp",
     title: "SCALABLE",
     subtitle: "PRODUCTION",
   },
@@ -41,21 +42,26 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-black flex items-center">
+    <section className="relative w-full min-h-[100dvh] overflow-hidden bg-black flex items-center">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0 z-0"
         >
-          {/* On mobile: full-cover with heavy dark overlay. On desktop: contained on right */}
-          <img
+          <Image
             src={heroSlides[currentSlide].image}
             alt="Manufacturing"
-            className="w-full h-full object-cover object-center md:object-right-top"
+            fill
+            sizes="100vw"
+            quality={100}
+            unoptimized
+            style={{ objectFit: "cover", objectPosition: "top center" }}
+            loading={currentSlide === 0 ? "eager" : "lazy"}
+            preload={currentSlide === 0}
           />
           {/* Gradients */}
           <div className="absolute inset-0 bg-black/70 md:bg-transparent" />
@@ -108,7 +114,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
             <a
-              href="https://wa.me/917592008008"
+              href="https://wa.me/917593005006"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black px-6 py-3 md:px-8 md:py-4 flex items-center justify-center font-bold tracking-widest text-sm hover:bg-gray-200 transition-colors"

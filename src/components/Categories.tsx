@@ -1,43 +1,44 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const categories = [
   {
     id: "denim",
     title: "DENIM GALLERY",
     shortDesc: "Premium Washes & Fits",
-    image: "/images/product category 1.png",
+    image: "/images/product category 1.webp",
     path: "/collections/denim-gallery"
   },
   {
     id: "shirts",
     title: "SHIRTS & SUITING",
     shortDesc: "Corporate & Casual Excellence",
-    image: "/images/product category 2.png",
+    image: "/images/product category 2.webp",
     path: "/collections/shirts-suiting"
   },
   {
     id: "knitwear",
     title: "KNITWEAR",
     shortDesc: "Everyday Essentials",
-    image: "/images/product category 3.png",
+    image: "/images/product category 3.webp",
     path: "/collections/knitwear-essentials"
   },
   {
     id: "activewear",
     title: "ACTIVEWEAR",
     shortDesc: "Performance Collection",
-    image: "/images/product category 4.png",
+    image: "/images/product category 4.webp",
     path: "/collections/activewear-performance"
   },
   {
     id: "uniform",
     title: "UNIFORM HUB",
     shortDesc: "Professional & Medical",
-    image: "/images/product category 5.png",
+    image: "/images/product category 5.webp",
     path: "/collections/uniform-hub"
   }
 ];
@@ -47,8 +48,8 @@ export default function Categories() {
 
   return (
     <section id="collections" className="py-24 bg-black overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 mb-12">
-        <div className="max-w-xl">
+      <div className="container mx-auto px-6 md:px-12 mb-12 flex flex-col lg:flex-row lg:items-center justify-between relative">
+        <div className="max-w-xl relative z-10 bg-black lg:pr-8">
           <h2 className="text-4xl md:text-6xl font-heading font-bold text-white leading-none mb-6">
             OUR CORE <br /> CATEGORIES<span className="text-primary">.</span>
           </h2>
@@ -56,6 +57,47 @@ export default function Categories() {
             Diverse categories.<br />
             Built with precision. Delivered with consistency.
           </p>
+        </div>
+
+        {/* Dynamic Space Filler: Sliding Outlined Text */}
+        <div className="hidden lg:flex flex-col flex-1 overflow-hidden space-y-4 opacity-20 hover:opacity-100 transition-opacity duration-700 cursor-default">
+          {/* Top Slide (Moves Left) */}
+          <motion.div 
+            animate={{ x: ["0%", "-50%"] }} 
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+            className="flex whitespace-nowrap items-center space-x-8"
+          >
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="flex items-center space-x-8">
+                <span 
+                  className="text-5xl font-heading font-black text-transparent uppercase tracking-widest" 
+                  style={{ WebkitTextStroke: "1px rgba(255,255,255,0.7)" }}
+                >
+                  NEXT MOVE GROUP
+                </span>
+                <span className="text-primary text-4xl">•</span>
+              </div>
+            ))}
+          </motion.div>
+          
+          {/* Bottom Slide (Moves Right) */}
+          <motion.div 
+            animate={{ x: ["-50%", "0%"] }} 
+            transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
+            className="flex whitespace-nowrap items-center space-x-8"
+          >
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="flex items-center space-x-8">
+                <span 
+                  className="text-5xl font-heading font-black text-transparent uppercase tracking-widest" 
+                  style={{ WebkitTextStroke: "1px rgba(255,255,255,0.7)" }}
+                >
+                  DUTCHWHITE
+                </span>
+                <span className="text-primary text-4xl">•</span>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
 
@@ -81,10 +123,13 @@ export default function Categories() {
                     isHovered ? "scale-105" : "scale-100"
                   }`}
                 >
-                  <img 
+                  <Image 
                     src={cat.image} 
                     alt={cat.title} 
-                    className="w-full h-full object-cover object-center"
+                    fill
+                    quality={100}
+                    unoptimized
+                    style={{ objectFit: "cover", objectPosition: "center" }}
                   />
                 </div>
 
@@ -122,10 +167,7 @@ export default function Categories() {
           })}
         </div>
         
-        <div className="mt-8 text-center flex items-center justify-center space-x-2 text-gray-500 text-sm">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Hover to explore each category</span>
-        </div>
+
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return Object.keys(collections).map((id) => ({
@@ -24,30 +25,49 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
     <div className="bg-black min-h-screen">
       <Navbar />
       
-      {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] flex items-center pt-24 overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10" />
-          <img
-            src={collection.image}
-            alt={collection.title}
-            className="w-full h-full object-cover object-center grayscale-[20%]"
-          />
-        </div>
-
-        <div className="container mx-auto px-6 md:px-12 relative z-20">
-          <Link href="/#collections" className="inline-flex items-center space-x-2 text-gray-400 hover:text-white transition-colors mb-8 group">
+      {/* Hero Section - Premium Split Layout */}
+      <section className="relative min-h-[60vh] md:min-h-[70vh] flex flex-col md:flex-row items-stretch pt-20 overflow-hidden border-b border-white/10 bg-black">
+        
+        {/* Left Side: Text */}
+        <div className="w-full md:w-1/2 px-6 md:px-12 lg:px-24 relative z-20 flex flex-col justify-center py-16 md:py-24">
+          <Link 
+            href="/#collections" 
+            className="inline-flex items-center space-x-2 text-gray-400 hover:text-primary transition-colors mb-10 md:mb-16 font-heading tracking-widest text-xs md:text-sm uppercase group"
+          >
             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-            <span className="text-sm tracking-widest">BACK TO COLLECTIONS</span>
+            <span>BACK TO COLLECTIONS</span>
           </Link>
           
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-white leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-heading font-black text-white leading-tight md:leading-none mb-8 uppercase tracking-tight">
             {collection.title}
           </h1>
-          <p className="text-gray-300 max-w-xl text-lg font-light leading-relaxed border-l-2 border-primary pl-4">
-            {collection.description}
-          </p>
+          
+          <div className="flex items-start space-x-4 md:space-x-6">
+            <div className="w-1 md:w-1.5 h-16 md:h-20 bg-primary mt-1 md:mt-2 shrink-0"></div>
+            <p className="text-gray-300 text-base md:text-xl lg:text-2xl font-light max-w-xl leading-relaxed">
+              {collection.description}
+            </p>
+          </div>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="w-full md:w-1/2 relative min-h-[50vh] md:min-h-full">
+          {/* Gradient blends to transition text into image smoothly */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-transparent z-10 hidden md:block w-full" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 md:hidden h-full" />
+          
+          <Image
+            src={collection.image}
+            alt={collection.title}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            quality={100}
+            unoptimized
+            style={{ objectFit: "cover", objectPosition: "top center" }}
+            className="grayscale-[15%]"
+            loading="eager"
+            priority
+          />
         </div>
       </section>
 
@@ -69,10 +89,15 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
               <div key={idx} className="group cursor-pointer">
                 <div className="aspect-[3/4] bg-[#0a0a0a] border border-white/5 mb-6 relative overflow-hidden flex items-center justify-center group-hover:border-white/20 transition-colors duration-500">
                   {product.image ? (
-                    <img 
+                    <Image 
                       src={product.image} 
                       alt={product.name} 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={100}
+                      unoptimized
+                      style={{ objectFit: "cover", objectPosition: "top center" }}
+                      className="transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
                     <>

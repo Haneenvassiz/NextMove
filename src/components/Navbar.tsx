@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -21,7 +22,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -33,7 +34,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <img src="/logo.svg" alt="Next Move Group" className="h-8 md:h-10 w-auto" />
+          <Image src="/logo.svg" alt="Next Move Group" width={240} height={80} className="h-8 md:h-10 w-auto" priority />
         </Link>
 
         {/* Desktop Nav */}
@@ -87,7 +88,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="https://wa.me/917592008008"
+              href="https://wa.me/917593005006"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 bg-primary text-black font-bold tracking-widest text-sm"

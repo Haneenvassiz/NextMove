@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Mail, MessageCircle, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -18,12 +18,19 @@ export default function Contact() {
               START YOUR <span className="text-gray-500">PRODUCTION</span>
             </h2>
 
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form 
+              action="mailto:business@nextmovegroupexport.com" 
+              method="POST" 
+              encType="text/plain" 
+              className="space-y-6"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-xs text-gray-500 tracking-widest mb-2">NAME</label>
                   <input 
                     type="text" 
+                    name="Name"
+                    required
                     className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-primary transition-colors"
                   />
                 </div>
@@ -31,6 +38,7 @@ export default function Contact() {
                   <label className="block text-xs text-gray-500 tracking-widest mb-2">BRAND / COMPANY</label>
                   <input 
                     type="text" 
+                    name="Company"
                     className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-primary transition-colors"
                   />
                 </div>
@@ -39,6 +47,8 @@ export default function Contact() {
               <div>
                 <label className="block text-xs text-gray-500 tracking-widest mb-2">REQUIREMENT</label>
                 <textarea 
+                  name="Requirement"
+                  required
                   rows={3}
                   className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-primary transition-colors resize-none"
                 ></textarea>
@@ -48,11 +58,12 @@ export default function Contact() {
                 <label className="block text-xs text-gray-500 tracking-widest mb-2">EXPECTED MOQ</label>
                 <input 
                   type="text" 
+                  name="MOQ"
                   className="w-full bg-transparent border-b border-white/20 pb-2 text-white focus:outline-none focus:border-primary transition-colors"
                 />
               </div>
 
-              <button className="bg-white text-black px-8 py-4 font-bold tracking-widest hover:bg-gray-200 transition-colors mt-4 w-full md:w-auto">
+              <button type="submit" className="bg-white text-black px-8 py-4 font-bold tracking-widest hover:bg-gray-200 transition-colors mt-4 w-full md:w-auto">
                 SUBMIT INQUIRY
               </button>
             </form>
@@ -65,13 +76,23 @@ export default function Contact() {
                 <h4 className="text-xl font-heading text-white tracking-wide mb-6">DIRECT CONTACT</h4>
                 
                 <div className="space-y-6">
-                  <a href="https://wa.me/917592008008" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-4 group">
+                  <a href="https://wa.me/917593005006" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-4 group">
                     <div className="p-3 bg-white/5 group-hover:bg-primary/20 transition-colors">
                       <MessageCircle className="text-white group-hover:text-primary" size={24} />
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 tracking-widest mb-1">WHATSAPP</div>
-                      <div className="text-white tracking-wide">+91 7592 008 008</div>
+                      <div className="text-white tracking-wide">+91 75930 05006</div>
+                    </div>
+                  </a>
+
+                  <a href="tel:+917593005006" className="flex items-start space-x-4 group">
+                    <div className="p-3 bg-white/5 group-hover:bg-primary/20 transition-colors">
+                      <Phone className="text-white group-hover:text-primary" size={24} />
+                    </div>
+                    <div>
+                      <div className="text-xs text-gray-500 tracking-widest mb-1">PHONE</div>
+                      <div className="text-white tracking-wide">+91 75930 05006</div>
                     </div>
                   </a>
 
@@ -85,27 +106,36 @@ export default function Contact() {
                     </div>
                   </a>
 
-                  <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-white/5">
-                      <MapPin className="text-white" size={24} />
+                  <a href="https://maps.app.goo.gl/yDurqbbH6M2SncWU8" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-4 group">
+                    <div className="p-3 bg-white/5 group-hover:bg-primary/20 transition-colors">
+                      <MapPin className="text-white group-hover:text-primary transition-colors" size={24} />
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 tracking-widest mb-1">LOCATION</div>
-                      <div className="text-white tracking-wide leading-relaxed text-sm">
-                        5/248-A, Sana Bazar, Naranipuzha Road,<br />
+                      <div className="text-white tracking-wide leading-relaxed text-sm group-hover:text-primary transition-colors">
+                        5/248-B, 1st Floor, Back Side, Section,<br />
                         Changaramkulam, Nannammukku PO,<br />
                         Malappuram DT, Kerala – 679575
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
 
-              {/* Minimal Map UI */}
-              <div className="mt-auto pt-12 relative grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-500">
-                <div className="w-full h-48 bg-[#111] border border-white/10 relative overflow-hidden flex items-center justify-center">
-                  <MapPin className="text-primary/50 absolute" size={48} />
-                  <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+              {/* Trust Strip: Registration */}
+              <div className="mt-auto pt-8 border-t border-white/10">
+                <p className="text-xs text-gray-500 tracking-widest uppercase mb-4">
+                  Government Registered Export Manufacturing Partner — India
+                </p>
+                <div className="flex flex-wrap gap-6 text-sm">
+                  <div>
+                    <span className="text-gray-500">IEC:</span>{" "}
+                    <span className="text-white font-medium tracking-wider">EUHPM4454B</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">GSTIN:</span>{" "}
+                    <span className="text-white font-medium tracking-wider">32EUHPM4454B1ZW</span>
+                  </div>
                 </div>
               </div>
             </div>
