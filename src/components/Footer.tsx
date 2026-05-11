@@ -60,13 +60,14 @@ export default function Footer() {
           <ul className="space-y-3 mb-8">
             <li className="text-gray-400 text-sm leading-relaxed hover:text-white transition-colors">
               <a href="https://maps.app.goo.gl/yDurqbbH6M2SncWU8" target="_blank" rel="noopener noreferrer">
-                5/248-B, 1st Floor, Back Side, Section,<br />
-                Changaramkulam, Nannammukku PO,<br />
-                Malappuram DT, Kerala – 679575
+                5/248-B, 1st Floor, Sana Bazar,<br />
+                Naranipuzha Road, Changaramkulam,<br />
+                Nannamukku PO, Malappuram DT, Kerala - 679575
               </a>
             </li>
             <li className="text-gray-400 text-sm">Email: business@nextmovegroupexport.com</li>
-            <li className="text-gray-400 text-sm">WhatsApp: +91 75930 05006</li>
+            <li className="text-gray-400 text-sm">Phone: +91 7592 008 008</li>
+            <li className="text-gray-400 text-sm">WhatsApp: +91 7593 005 006</li>
             <li className="flex items-center space-x-4 pt-2">
               <a href="https://www.linkedin.com/company/nextmovegroupexport/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>

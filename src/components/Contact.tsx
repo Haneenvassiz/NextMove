@@ -82,17 +82,17 @@ export default function Contact() {
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 tracking-widest mb-1">WHATSAPP</div>
-                      <div className="text-white tracking-wide">+91 75930 05006</div>
+                      <div className="text-white tracking-wide">+91 7593 005 006</div>
                     </div>
                   </a>
 
-                  <a href="tel:+917593005006" className="flex items-start space-x-4 group">
+                  <a href="tel:+917592008008" className="flex items-start space-x-4 group">
                     <div className="p-3 bg-white/5 group-hover:bg-primary/20 transition-colors">
                       <Phone className="text-white group-hover:text-primary" size={24} />
                     </div>
                     <div>
                       <div className="text-xs text-gray-500 tracking-widest mb-1">PHONE</div>
-                      <div className="text-white tracking-wide">+91 75930 05006</div>
+                      <div className="text-white tracking-wide">+91 7592 008 008</div>
                     </div>
                   </a>
 
@@ -113,9 +113,9 @@ export default function Contact() {
                     <div>
                       <div className="text-xs text-gray-500 tracking-widest mb-1">LOCATION</div>
                       <div className="text-white tracking-wide leading-relaxed text-sm group-hover:text-primary transition-colors">
-                        5/248-B, 1st Floor, Back Side, Section,<br />
-                        Changaramkulam, Nannammukku PO,<br />
-                        Malappuram DT, Kerala – 679575
+                        5/248-B, 1st Floor, Sana Bazar,<br />
+                        Naranipuzha Road, Changaramkulam,<br />
+                        Nannamukku PO, Malappuram DT, Kerala - 679575
                       </div>
                     </div>
                   </a>

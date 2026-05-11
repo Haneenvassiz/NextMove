@@ -4,17 +4,16 @@ export const collections = {
     description: "Premium washed and tailored denim. Expertly crafted for global brands.",
     image: "/images/product category 1.webp",
     products: [
-      { name: "Denim Overshirt", image: "/images/products/Denim Gallery/Overshirts.webp" },
-      { name: "Mudd Washed", image: "/images/products/Denim Gallery/Mudd Washed.webp" },
-      { name: "Slim Fit", image: "/images/products/Denim Gallery/Slim fit.webp" },
-      { name: "Mom Fit", image: "/images/products/Denim Gallery/Mom fit.webp" },
-      { name: "Regular Fit", image: "/images/products/Denim Gallery/Regular fit.webp" },
-      { name: "Relaxed Fit", image: "/images/products/Denim Gallery/relaxed fit.webp" },
-      { name: "Low Rise Fit", image: "/images/products/Denim Gallery/low rise fit.webp" },
-      { name: "Jogger Fit", image: "/images/products/Denim Gallery/jogger fit.webp" },
-      { name: "Ripped Jeans", image: "/images/products/Denim Gallery/ripped jeans.webp" },
-      { name: "Skinny Fit", image: "/images/products/Denim Gallery/skinny fit.webp" },
-      { name: "Cargo Shorts", image: "/images/products/Denim Gallery/Cargo shorts.webp" }
+      { name: "Men’s Regular Fit Jeans", image: "/images/products/Denim Gallery/Regular fit.webp" },
+      { name: "Men’s Slim Fit Mid Blue Washed Jeans", image: "/images/products/Denim Gallery/Slim fit.webp" },
+      { name: "Men’s Relaxed Fit Jeans", image: "/images/products/Denim Gallery/relaxed fit.webp" },
+      { name: "Men’s Acid Wash Baggy Jeans", image: "/images/products/Denim Gallery/ripped jeans.webp" },
+      { name: "Men’s Jogger Fit Jeans", image: "/images/products/Denim Gallery/jogger fit.webp" },
+      { name: "Men’s High Rise Jeans", image: "/images/products/Denim Gallery/Mom fit.webp" },
+      { name: "Men’s Low Rise Jeans", image: "/images/products/Denim Gallery/low rise fit.webp" },
+      { name: "Men’s Skinny Fit Jeans", image: "/images/products/Denim Gallery/skinny fit.webp" },
+      { name: "Men’s Vintage Stone Wash Denim", image: "/images/products/Denim Gallery/Mudd Washed.webp" },
+      { name: "Men’s Denim Overshirt", image: "/images/products/Denim Gallery/Overshirts.webp" }
     ]
   },
   "shirts-suiting": {
@@ -22,15 +21,15 @@ export const collections = {
     description: "Impeccable corporate and casual excellence with the finest fabrics.",
     image: "/images/product category 2.webp",
     products: [
-      { name: "Oxford Solid", image: "/images/products/Shirts/oxford solid.webp" },
-      { name: "Oxford Stripes", image: "/images/products/Shirts/oxford stripes.webp" },
-      { name: "Oxford Shirt", image: "/images/products/Shirts/Oxford shirt.webp" },
-      { name: "Linen Shirts", image: "/images/products/Shirts/linen shirts.webp" },
-      { name: "Corduroy Shirt", image: "/images/products/Shirts/carduroy shirt.webp" },
-      { name: "Satin Shirt", image: "/images/products/Shirts/satin shirt.webp" },
-      { name: "Canvas Shirts", image: "/images/products/Shirts/canvas shirts.webp" },
-      { name: "Twill Shirts", image: "/images/products/Shirts/twill shirts.webp" },
-      { name: "Flannel Shirt", image: "/images/products/Shirts/flannel shirt.webp" }
+      { name: "Men’s Oxford Solid Shirt", image: "/images/products/Shirts/Oxford shirt.webp" },
+      { name: "Men’s Oxford Striped Shirt", image: "/images/products/Shirts/oxford stripes.webp" },
+      { name: "Men’s Oxford Checked Shirt", image: "/images/products/Shirts/oxford solid.webp" },
+      { name: "Men’s Premium Linen Shirt", image: "/images/products/Shirts/linen shirts.webp" },
+      { name: "Men’s Corduroy Shirt", image: "/images/products/Shirts/carduroy shirt.webp" },
+      { name: "Men’s Cotton Twill Casual Shirt", image: "/images/products/Shirts/twill shirts.webp" },
+      { name: "Men’s Checked Flannel Shirt", image: "/images/products/Shirts/flannel shirt.webp" },
+      { name: "Men’s Satin Party Wear Shirts", image: "/images/products/Shirts/satin shirt.webp" },
+      { name: "Men’s Canvas Shirts", image: "/images/products/Shirts/canvas shirts.webp" }
     ]
   },
   "knitwear-essentials": {
@@ -38,18 +37,18 @@ export const collections = {
     description: "Everyday essentials crafted with precision and supreme comfort.",
     image: "/images/product category 3.webp",
     products: [
-      { name: "Regular Fit", image: "/images/products/knit wear/regular fit.webp" },
-      { name: "Fitted T-Shirt", image: "/images/products/knit wear/fitted tshirt.webp" },
-      { name: "Oversized Fit", image: "/images/products/knit wear/oversized fit.webp" },
-      { name: "Boxy Fit", image: "/images/products/knit wear/boxy fit.webp" },
-      { name: "Loose Fit", image: "/images/products/knit wear/loose fit.webp" },
       { name: "Polo", image: "/images/products/knit wear/polo.webp" },
+      { name: "Hoodies", image: "/images/products/knit wear/hoodies.webp" },
+      { name: "Loose Fit Pants", image: "/images/products/knit wear/loose fit pant.webp" },
       { name: "Sweatshirt", image: "/images/products/knit wear/sweatshirt.webp" },
-      { name: "Hoodie", image: "/images/products/knit wear/hoodies.webp" },
-      { name: "Regular Fit Pant", image: "/images/products/knit wear/regular fit pant.webp" },
-      { name: "Loose Fit Pant", image: "/images/products/knit wear/loose fit pant.webp" },
       { name: "Regular Fit Shorts", image: "/images/products/knit wear/regular fit shorts.webp" },
-      { name: "Relaxed Fit Shorts", image: "/images/products/knit wear/relaxed fit shorts.webp" }
+      { name: "Fitted T-Shirt", image: "/images/products/knit wear/fitted tshirt.webp" },
+      { name: "Boxy Fit", image: "/images/products/knit wear/boxy fit.webp" },
+      { name: "Relaxed Fit Shorts", image: "/images/products/knit wear/relaxed fit shorts.webp" },
+      { name: "Regular Fit Pants", image: "/images/products/knit wear/regular fit pant.webp" },
+      { name: "Regular Fit", image: "/images/products/knit wear/regular fit.webp" },
+      { name: "Loose Fit", image: "/images/products/knit wear/loose fit.webp" },
+      { name: "Oversized Fit", image: "/images/products/knit wear/oversized fit.webp" }
     ]
   },
   "activewear-performance": {
@@ -57,15 +56,13 @@ export const collections = {
     description: "High-performance gear engineered for mobility and endurance.",
     image: "/images/product category 4.webp",
     products: [
-      { name: "Dri-Fit T-Shirt", image: "/images/products/active wear/dri-fit tshirt.webp" },
-      { name: "Long Sleeve", image: "/images/products/active wear/long sleeve.webp" },
-      { name: "Sleeveless Vests", image: "/images/products/active wear/sleeveless vests.webp" },
-      { name: "Compression Long Sleeve", image: "/images/products/active wear/compression fit long sleeve.webp" },
-      { name: "Compression Running Tight", image: "/images/products/active wear/compression fit running tight.webp" },
-      { name: "Drift Shorts", image: "/images/products/active wear/drift shorts.webp" },
-      { name: "Layered Shorts", image: "/images/products/active wear/layered shorts.webp" },
       { name: "Track Jacket", image: "/images/products/active wear/track jacket.webp" },
-      { name: "Track Pant", image: "/images/products/active wear/track pant.webp" }
+      { name: "Dri-Fit T-Shirts", image: "/images/products/active wear/dri-fit tshirt.webp" },
+      { name: "Layered Shorts", image: "/images/products/active wear/layered shorts.webp" },
+      { name: "Long Sleeve", image: "/images/products/active wear/long sleeve.webp" },
+      { name: "Dri-Fit Shorts", image: "/images/products/active wear/drift shorts.webp" },
+      { name: "Track Pants", image: "/images/products/active wear/track pant.webp" },
+      { name: "Sleeveless Vests", image: "/images/products/active wear/sleeveless vests.webp" }
     ]
   },
   "uniform-hub": {

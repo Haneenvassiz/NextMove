@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export function generateStaticParams() {
   return Object.keys(collections).map((id) => ({
@@ -129,6 +130,7 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
       </section>
 
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
