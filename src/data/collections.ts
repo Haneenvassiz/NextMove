@@ -9,26 +9,26 @@ export const collections = {
         products: [
           { name: "Regular Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/1. Regular Fit Jeans.png" },
           { name: "Slim Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/2.Slim Fit Jeans.png" },
-          { name: "Relaxed Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/3. Relaxed Fit Jeans.png" },
+          { name: "Relaxed Straight Jeans", image: "/images/Denim Gallery/Denim Jeans/3. Relaxed Fit Jeans.png" },
           { name: "Straight Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/4.Straight Fit Jeans.png" },
           { name: "Loose Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/5.Loose Fit Jeans.png" },
           { name: "Super Baggy Jeans", image: "/images/Denim Gallery/Denim Jeans/6.Super Baggy Jeans.png" },
-          { name: "Jogger Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/7.Jogger Fit Jeans.png" },
+          { name: "Denim Jogger Jeans", image: "/images/Denim Gallery/Denim Jeans/7.Jogger Fit Jeans.png" },
           { name: "Skinny Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/8.Skinny fit Jeans.png" },
           { name: "Mom Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/9.Mom Fit Jeans.png" },
           { name: "Flared Low-Waist Jeans", image: "/images/Denim Gallery/Denim Jeans/10Flared Low-Waist Jeans.png" },
           { name: "High-Rise Jeans", image: "/images/Denim Gallery/Denim Jeans/11.High-Rise Jeans.png" },
           { name: "Low-Rise Jeans", image: "/images/Denim Gallery/Denim Jeans/12.Low-Rise Jeans.png" },
-          { name: "Mud-Washed Jeans", image: "/images/Denim Gallery/Denim Jeans/13.Mud washed.png" }
+          { name: "Mud Wash Jeans", image: "/images/Denim Gallery/Denim Jeans/13.Mud washed.png" }
         ]
       },
       {
         title: "Denim Shirts & Jackets",
         products: [
-          { name: "Denim Shirts", image: "/images/Denim Gallery/Denim Shirt/1.Denim Shirt.png" },
-          { name: "Denim Overshirts", image: "/images/Denim Gallery/Denim Shirt/2.Denim Overshirts.png" },
-          { name: "Boxy Fit Denim Jackets", image: "/images/Denim Gallery/Denim Shirt/3.Boxy Fit Denim Jackets.png" },
-          { name: "Zippered Denim Jackets", image: "/images/Denim Gallery/Denim Shirt/4.Zippered Denim Jackets.png" }
+          { name: "Denim Shirt", image: "/images/Denim Gallery/Denim Shirt/1.Denim Shirt.png" },
+          { name: "Denim Overshirt", image: "/images/Denim Gallery/Denim Shirt/2.Denim Overshirts.png" },
+          { name: "Boxy Fit Denim Jacket", image: "/images/Denim Gallery/Denim Shirt/3.Boxy Fit Denim Jackets.png" },
+          { name: "Zip-Front Denim Jacket", image: "/images/Denim Gallery/Denim Shirt/4.Zippered Denim Jackets.png" }
         ]
       }
     ]
@@ -41,25 +41,25 @@ export const collections = {
       {
         title: "Oxford Collection",
         products: [
-          { name: "Oxford Solid", image: "/images/Shirt and Suit/1.oxford solid.png" },
-          { name: "Oxford Stripes", image: "/images/Shirt and Suit/2.oxford stripes.png" },
-          { name: "Oxford Checks", image: "/images/Shirt and Suit/3.oxford checks.png" }
+          { name: "Oxford Solid Shirt", image: "/images/Shirt and Suit/1.oxford solid.png" },
+          { name: "Oxford Striped Shirt", image: "/images/Shirt and Suit/2.oxford stripes.png" },
+          { name: "Oxford Checked Shirt", image: "/images/Shirt and Suit/3.oxford checks.png" }
         ]
       },
       {
         title: "Premium Fabrics",
         products: [
-          { name: "Linen", image: "/images/Shirt and Suit/4.linen.png" },
-          { name: "Corduroy Shirts", image: "/images/Shirt and Suit/5.Corduroy Shirts.png" },
-          { name: "Twill Shirts", image: "/images/Shirt and Suit/6.Twill Shirts.png" },
-          { name: "Flannel", image: "/images/Shirt and Suit/7.flannel.png" },
-          { name: "Canvas", image: "/images/Shirt and Suit/9.canvas.png" }
+          { name: "Linen Shirt", image: "/images/Shirt and Suit/4.linen.png" },
+          { name: "Corduroy Shirt", image: "/images/Shirt and Suit/5.Corduroy Shirts.png" },
+          { name: "Cotton Twill Casual Shirt", image: "/images/Shirt and Suit/6.Twill Shirts.png" },
+          { name: "Checked Flannel Shirt", image: "/images/Shirt and Suit/7.flannel.png" },
+          { name: "Western Denim Shirt", image: "/images/Shirt and Suit/9.canvas.png" }
         ]
       },
       {
         title: "Party & Tech Wear",
         products: [
-          { name: "Satin", image: "/images/Shirt and Suit/8.satin.png" }
+          { name: "Satin Party Wear Shirt", image: "/images/Shirt and Suit/8.satin.png" }
         ]
       }
     ]
@@ -72,19 +72,19 @@ export const collections = {
       {
         title: "T-Shirts & Tops",
         products: [
-          { name: "Regular Fit T-Shirts", image: "/images/Knitwear/1.Regular Fit T-Shirts.png" },
-          { name: "Loose Fit T-Shirts", image: "/images/Knitwear/2.Loose Fit T-Shirts.png" },
-          { name: "Oversized T-Shirts", image: "/images/Knitwear/3.Oversized T-Shirts.png" },
-          { name: "Polo T-Shirts", image: "/images/Knitwear/4.Polo T-Shirts.png" },
+          { name: "Regular Fit T-Shirt", image: "/images/Knitwear/1.Regular Fit T-Shirts.png" },
+          { name: "Loose Fit T-Shirt", image: "/images/Knitwear/2.Loose Fit T-Shirts.png" },
+          { name: "Oversized T-Shirt", image: "/images/Knitwear/3.Oversized T-Shirts.png" },
+          { name: "Polo T-Shirt", image: "/images/Knitwear/4.Polo T-Shirts.png" },
           { name: "Fitted T-Shirt", image: "/images/Knitwear/8.Fitted tshirt.png" }
         ]
       },
       {
         title: "Sweatwear",
         products: [
-          { name: "Hoodies", image: "/images/Knitwear/5.Hoodies.png" },
-          { name: "Sweatshirts", image: "/images/Knitwear/6.Sweatshirts.png" },
-          { name: "Boxy Fit", image: "/images/Knitwear/7.Boxy Fit.png" }
+          { name: "Hoodie", image: "/images/Knitwear/5.Hoodies.png" },
+          { name: "Sweatshirt", image: "/images/Knitwear/6.Sweatshirts.png" },
+          { name: "Boxy Fit Tee", image: "/images/Knitwear/7.Boxy Fit.png" }
         ]
       },
       {
@@ -106,18 +106,18 @@ export const collections = {
       {
         title: "Active Tops",
         products: [
-          { name: "Dri-FIT T-Shirts", image: "/images/ActiveWear/1.drifit tshirt.png" },
-          { name: "Long Sleeve", image: "/images/ActiveWear/2.long sleeve.png" },
-          { name: "Sleeveless Vests", image: "/images/ActiveWear/3.sleeveless vests.png" },
-          { name: "Track Jackets", image: "/images/ActiveWear/4.track jack.png" }
+          { name: "Performance Crew Neck Tee", image: "/images/ActiveWear/1.drifit tshirt.png" },
+          { name: "Performance Long Sleeve Tee", image: "/images/ActiveWear/2.long sleeve.png" },
+          { name: "Athletic Sleeveless Tank", image: "/images/ActiveWear/3.sleeveless vests.png" },
+          { name: "Classic Track Jacket", image: "/images/ActiveWear/4.track jack.png" }
         ]
       },
       {
         title: "Active Bottoms",
         products: [
-          { name: "Track Pants", image: "/images/ActiveWear/5.track pant.png" },
-          { name: "Dri-FIT Shorts", image: "/images/ActiveWear/6.drifit shorts.png" },
-          { name: "Layered Shorts", image: "/images/ActiveWear/7.Layered shorts.png" }
+          { name: "Slim Track Pants", image: "/images/ActiveWear/5.track pant.png" },
+          { name: "Performance Training Shorts", image: "/images/ActiveWear/6.drifit shorts.png" },
+          { name: "2-in-1 Training Shorts", image: "/images/ActiveWear/7.Layered shorts.png" }
         ]
       }
     ]
@@ -130,15 +130,15 @@ export const collections = {
       {
         title: "Corporate & Industrial",
         products: [
-          { name: "Industrial Corporation Uniform", image: "/images/Uniform Hub/1.Industrial corperation unifrom.png" },
-          { name: "Industrial Knitwear", image: "/images/Uniform Hub/2.Industrial Knitwear.png" },
-          { name: "Corporate Formal Shirts", image: "/images/Uniform Hub/3.Corporate Formal Shirts.png" }
+          { name: "Industrial Workwear Uniform", image: "/images/Uniform Hub/1.Industrial corperation unifrom.png" },
+          { name: "Industrial Knitwear Uniform", image: "/images/Uniform Hub/2.Industrial Knitwear.png" },
+          { name: "Corporate Formal Shirt Set", image: "/images/Uniform Hub/3.Corporate Formal Shirts.png" }
         ]
       },
       {
         title: "Medical & Specialised",
         products: [
-          { name: "Medical Scrub Suits", image: "/images/Uniform Hub/4.Medical Scrub Suits.png" }
+          { name: "Medical Scrub Set", image: "/images/Uniform Hub/4.Medical Scrub Suits.png" }
         ]
       }
     ]

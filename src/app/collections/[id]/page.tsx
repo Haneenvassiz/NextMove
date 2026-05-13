@@ -13,6 +13,25 @@ export function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const params = await props.params;
+  const collection = collections[params.id as keyof typeof collections];
+  
+  if (!collection) return { title: "Collection Not Found" };
+
+  return {
+    title: collection.title,
+    description: collection.description,
+    openGraph: {
+      title: `${collection.title} | Next Move Group`,
+      description: collection.description,
+      images: [collection.image],
+    },
+  };
+}
+
+import { Metadata } from "next";
+
 export default async function CollectionPage(props: { params: Promise<{ id: string }> }) {
   const params = await props.params;
   const collectionId = params.id as keyof typeof collections;
