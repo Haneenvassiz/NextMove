@@ -7,25 +7,25 @@ import Image from "next/image";
 const heroSlides = [
   {
     id: 1,
-    image: "/images/hero section.webp",
+    image: "/images/Hero Section/hero section.webp",
     title: "ELITE",
     subtitle: "MANUFACTURING",
   },
   {
     id: 2,
-    image: "/images/hero section 2.webp",
+    image: "/images/Hero Section/hero section 2.webp",
     title: "GLOBAL",
     subtitle: "EXPORT HUB",
   },
   {
     id: 3,
-    image: "/images/hero section 3.webp",
+    image: "/images/Hero Section/hero section 3.webp",
     title: "PREMIUM",
     subtitle: "QUALITY",
   },
   {
     id: 4,
-    image: "/images/hero section 4.webp",
+    image: "/images/Hero Section/hero section 4.webp",
     title: "SCALABLE",
     subtitle: "PRODUCTION",
   },

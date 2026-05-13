@@ -10,35 +10,35 @@ const categories = [
     id: "denim",
     title: "DENIM GALLERY",
     shortDesc: "Premium Washes & Fits",
-    image: "/images/product category 1.webp",
+    image: "/images/Product Category/product category 1.webp",
     path: "/collections/denim-gallery"
   },
   {
     id: "shirts",
     title: "SHIRTS & SUITING",
     shortDesc: "Corporate & Casual Excellence",
-    image: "/images/product category 2.webp",
+    image: "/images/Product Category/product category 2.webp",
     path: "/collections/shirts-suiting"
   },
   {
     id: "knitwear",
     title: "KNITWEAR",
     shortDesc: "Everyday Essentials",
-    image: "/images/product category 3.webp",
+    image: "/images/Product Category/product category 3.webp",
     path: "/collections/knitwear-essentials"
   },
   {
     id: "activewear",
     title: "ACTIVEWEAR",
     shortDesc: "Performance Collection",
-    image: "/images/product category 4.webp",
+    image: "/images/Product Category/product category 4.webp",
     path: "/collections/activewear-performance"
   },
   {
     id: "uniform",
     title: "UNIFORM HUB",
     shortDesc: "Professional & Medical",
-    image: "/images/product category 5.webp",
+    image: "/images/Product Category/product category 5.webp",
     path: "/collections/uniform-hub"
   }
 ];
@@ -166,8 +166,6 @@ export default function Categories() {
             );
           })}
         </div>
-        
-
       </div>
     </section>
   );

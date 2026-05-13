@@ -1,0 +1,179 @@
+🌐 WEBSITE STRUCTURE
+Brand: Next Move Group – Global Manufacturing Hub
+Goal: Convert international brands into sourcing clients
+
+1. 🏠 HOMEPAGE (Landing Page)
+Hero Section
+Headline:
+“Built for Scale. Trusted for Precision.”
+Subtext:
+Your strategic manufacturing partner in India for premium apparel production.
+CTA Buttons:
+“Start Your Project”
+“View Capabilities”
+
+Problem → Solution Section
+Problem:
+Inconsistent quality
+Delayed timelines
+Fragmented supply chain
+Solution:
+Direct factory access
+Standardized production
+End-to-end execution
+
+Who We Are
+Short intro about Next Move Group
+Positioning:
+On-ground sourcing & manufacturing partner in India
+
+Key Strengths (Icons Section)
+Direct Factory Access
+Engineered Consistency
+Scalable Production
+Category Expertise
+End-to-End Execution
+
+Core Categories (Visual Grid)
+Denim
+Shirts
+Knitwear
+Activewear
+Uniforms
+👉 Each clickable → goes to detailed pages
+
+Process Section (Timeline Style)
+Sampling → Development → Production → Finishing → Delivery
+
+CTA Banner
+“Build Your Supply Chain with India’s Best Manufacturers”
+
+2. 🏢 ABOUT US
+Sections:
+Company Overview
+Vision & Mission
+Why India (Manufacturing Advantage)
+Our Network (Tier-1 factories explanation)
+Leadership / Founder Note (optional – highly recommended)
+
+3. ⚙️ WHAT MAKES US DIFFERENT
+Break this into strong visual blocks:
+Direct Factory Access
+No Middle Layers
+Standardized QC System
+Pan-India Manufacturing Network
+Scalable from Startup to Retail Chains
+👉 Add credibility elements:
+Factory certifications (if any)
+Production numbers
+Export regions
+
+4. 🧵 CORE CATEGORIES (Main Page)
+Grid layout linking to subpages:
+
+4.1 DENIM GALLERY
+Premium denim sourcing
+Rugged + modern silhouette
+Washed / raw / stretch denim options
+
+4.2 SHIRTS & SUITING
+15–16 SPI tailoring
+Premium fabrics
+Climate-adapted materials
+
+4.3 KNITWEAR & ESSENTIALS
+T-shirts
+Polos
+Loungewear
+Breathable fabrics
+
+4.4 ACTIVEWEAR & PERFORMANCE
+Moisture-wicking fabrics
+Gym wear
+Sportswear
+High-performance synthetics
+
+4.5 UNIFORM HUB
+Split into:
+Corporate uniforms
+Healthcare apparel
+Industrial uniforms
+
+5. 🏭 MANUFACTURING PROCESS
+Detailed workflow page:
+Design & Sampling
+Fabric Sourcing
+Product Development
+Bulk Production
+Quality Control
+Packaging
+Shipping & Delivery
+👉 Add visuals / icons / flowchart
+
+6. 📦 CAPABILITIES
+MOQ details
+Production capacity
+Lead times
+Fabric sourcing ability
+Customization options
+👉 This page builds trust + clarity for buyers
+
+7. 🌍 PARTNER WITH US
+Strong sales page:
+Headline:
+“Build With the Best – Your Gateway to Elite Manufacturing in India”
+Content:
+Who should partner with you:
+Fashion brands
+Retail chains
+Startups
+Private labels
+Benefits:
+Cost efficiency
+Reliable supply chain
+Premium quality
+👉 CTA: “Book a Consultation”
+
+
+9. 📞 CONTACT PAGE
+Inquiry form (important fields):
+Name
+Brand
+Requirement
+MOQ
+WhatsApp button
+Email
+Location map
+
+10. 🔗 FOOTER
+Quick links
+Categories
+Contact info
+Website: nextmovegroupexport.com
+Social links
+
+🎯 DESIGN STYLE GUIDE (Give this to designer)
+Look: Premium / Industrial / Global
+Colors:
+Black / Charcoal
+White
+Accent: Metallic Grey / Deep Blue
+Fonts:
+Bold sans-serif for headings
+Clean modern body font
+Layout:
+Large images
+Minimal text
+Strong whitespace
+UI Style:
+Smooth animations
+Hover effects
+Scroll storytelling
+
+💡 BONUS (Highly Recommended)
+Add these for a premium feel + conversion boost:
+Client logos (future)
+Testimonials
+Download brochure button
+“Request Sample” CTA
+WhatsApp quick inquiry

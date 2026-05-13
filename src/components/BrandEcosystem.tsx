@@ -67,8 +67,8 @@ export default function BrandEcosystem() {
               
               <div className="mb-10">
                 <div className="flex flex-col items-start gap-4 mb-6">
-                  <Image src="/images/dutchwhite_logo.png" alt="Dutchwhite Logo" width={80} height={80} className="w-16 md:w-20 h-auto invert" />
-                  <Image src="/images/dutchwhite_font.png" alt="Dutchwhite" width={240} height={60} className="w-48 md:w-56 h-auto invert" />
+                  <Image src="/images/DutchWhite/dutchwhite_logo.png" alt="Dutchwhite Logo" width={80} height={80} className="w-16 md:w-20 h-auto invert" />
+                  <Image src="/images/DutchWhite/dutchwhite_font.png" alt="Dutchwhite" width={240} height={60} className="w-48 md:w-56 h-auto invert" />
                 </div>
                 <p className="text-primary/70 text-xs tracking-[0.3em] uppercase">
                   Associated Fashion Division
