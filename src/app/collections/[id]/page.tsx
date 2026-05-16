@@ -81,8 +81,7 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
             alt={collection.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            quality={100}
-            unoptimized
+            quality={90}
             style={{ objectFit: "cover", objectPosition: "top center" }}
             className="grayscale-[15%]"
             loading="eager"
@@ -122,8 +121,7 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
                               alt={product.name} 
                               fill
                               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                              quality={100}
-                              unoptimized
+                              quality={80}
                               style={{ objectFit: "contain", objectPosition: "center" }}
                               className="transition-transform duration-700 group-hover:scale-105 p-4"
                             />
@@ -174,7 +172,6 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
                             fill
                             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             quality={100}
-                            unoptimized
                             style={{ objectFit: "contain", objectPosition: "center" }}
                             className="transition-transform duration-700 group-hover:scale-105 p-4"
                           />

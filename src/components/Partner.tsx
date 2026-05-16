@@ -21,8 +21,7 @@ export default function Partner() {
           src="/images/product category 1.webp" 
           alt="Partner Background" 
           fill
-          quality={100}
-          unoptimized
+          quality={80}
           style={{ objectFit: "cover", objectPosition: "center" }}
           className="grayscale-[20%]"
         />

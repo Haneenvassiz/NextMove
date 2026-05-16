@@ -102,67 +102,76 @@ export default function Categories() {
       </div>
 
       <div className="container mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible pb-8 md:pb-0 scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0">
           {categories.map((cat, idx) => {
             const isHovered = hoveredIndex === idx;
             const isAnyHovered = hoveredIndex !== null;
 
             return (
-              <Link
-                href={cat.path}
+              <motion.div
                 key={idx}
-                onMouseEnter={() => setHoveredIndex(idx)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                className={`relative h-[400px] md:h-[500px] rounded-lg overflow-hidden cursor-pointer group transition-all duration-300 border-2 ${
-                  isHovered ? "border-primary -translate-y-2" : "border-transparent"
-                }`}
+                initial={{ opacity: 0.5, filter: "blur(4px)" }}
+                whileInView={{ opacity: 1, filter: "blur(0px)" }}
+                viewport={{ amount: 0.7 }}
+                transition={{ duration: 0.5 }}
+                className="min-w-[85vw] sm:min-w-[45vw] md:min-w-0 w-full h-full"
               >
-                {/* Background Image */}
-                <div 
-                  className={`absolute inset-0 transition-all duration-500 ease-in-out ${
-                    isHovered ? "scale-105" : "scale-100"
+                <Link
+                  href={cat.path}
+                  onMouseEnter={() => setHoveredIndex(idx)}
+                  onMouseLeave={() => setHoveredIndex(null)}
+                  className={`relative block h-[450px] md:h-[550px] rounded-xl overflow-hidden cursor-pointer group transition-all duration-500 border-2 ${
+                    isHovered ? "border-primary -translate-y-2" : "border-transparent"
                   }`}
                 >
-                  <Image 
-                    src={cat.image} 
-                    alt={cat.title} 
-                    fill
-                    quality={100}
-                    unoptimized
-                    style={{ objectFit: "cover", objectPosition: "center" }}
-                  />
-                </div>
+                  {/* Background Image */}
+                  <div 
+                    className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                      isHovered ? "scale-110" : "scale-100"
+                    }`}
+                  >
+                    <Image 
+                      src={cat.image} 
+                      alt={cat.title} 
+                      fill
+                      quality={90}
+                      style={{ objectFit: "cover", objectPosition: "center" }}
+                    />
+                  </div>
 
-                {/* Overlays (Tinting/Blurring) */}
-                <div 
-                  className={`absolute inset-0 transition-all duration-500 ${
-                    !isAnyHovered 
-                      ? "bg-gradient-to-t from-[#050B14] via-[#050B14]/60 to-[#050B14]/40" 
-                      : isHovered 
+                  {/* Overlays */}
+                  <div 
+                    className={`absolute inset-0 transition-all duration-500 ${
+                      isHovered 
                         ? "bg-gradient-to-t from-black/80 via-black/20 to-transparent" 
-                        : "bg-[#050B14]/80 backdrop-blur-[2px]"
-                  }`}
-                ></div>
-                
-                {/* Content */}
-                <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                  <div className="transform transition-transform duration-300">
-                    <div className={`text-4xl font-heading font-bold mb-2 transition-colors duration-300 ${isHovered ? "text-primary" : "text-gray-500"}`}>
-                      0{idx + 1}.
-                    </div>
-                    <h4 className="text-2xl font-heading font-bold text-white leading-tight mb-6 uppercase tracking-wide">
-                      {cat.title}
-                    </h4>
-                    
-                    {/* Arrow */}
-                    <div className="text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      </svg>
+                        : "bg-black/40 md:bg-black/60 group-hover:bg-black/20"
+                    }`}
+                  ></div>
+                  
+                  {/* Content */}
+                  <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
+                    <div className="transform transition-transform duration-300">
+                      <div className={`text-4xl font-heading font-bold mb-2 transition-colors duration-300 ${isHovered ? "text-primary" : "text-primary/60"}`}>
+                        0{idx + 1}.
+                      </div>
+                      <h4 className="text-2xl font-heading font-bold text-white leading-tight mb-4 uppercase tracking-wide">
+                        {cat.title}
+                      </h4>
+                      
+                      <p className={`text-sm text-gray-400 mb-6 transition-all duration-500 overflow-hidden ${isHovered ? "max-h-20 opacity-100" : "max-h-0 opacity-0"}`}>
+                        {cat.shortDesc}
+                      </p>
+
+                      {/* Arrow */}
+                      <div className="text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </motion.div>
             );
           })}
         </div>

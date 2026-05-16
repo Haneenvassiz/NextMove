@@ -13,22 +13,9 @@ export const collections = {
           { name: "Straight Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/4.Straight Fit Jeans.png" },
           { name: "Loose Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/5.Loose Fit Jeans.png" },
           { name: "Super Baggy Jeans", image: "/images/Denim Gallery/Denim Jeans/6.Super Baggy Jeans.png" },
-          { name: "Denim Jogger Jeans", image: "/images/Denim Gallery/Denim Jeans/7.Jogger Fit Jeans.png" },
           { name: "Skinny Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/8.Skinny fit Jeans.png" },
           { name: "Mom Fit Jeans", image: "/images/Denim Gallery/Denim Jeans/9.Mom Fit Jeans.png" },
-          { name: "Flared Low-Waist Jeans", image: "/images/Denim Gallery/Denim Jeans/10Flared Low-Waist Jeans.png" },
-          { name: "High-Rise Jeans", image: "/images/Denim Gallery/Denim Jeans/11.High-Rise Jeans.png" },
-          { name: "Low-Rise Jeans", image: "/images/Denim Gallery/Denim Jeans/12.Low-Rise Jeans.png" },
-          { name: "Mud Wash Jeans", image: "/images/Denim Gallery/Denim Jeans/13.Mud washed.png" }
-        ]
-      },
-      {
-        title: "Denim Shirts & Jackets",
-        products: [
-          { name: "Denim Shirt", image: "/images/Denim Gallery/Denim Shirt/1.Denim Shirt.png" },
-          { name: "Denim Overshirt", image: "/images/Denim Gallery/Denim Shirt/2.Denim Overshirts.png" },
-          { name: "Boxy Fit Denim Jacket", image: "/images/Denim Gallery/Denim Shirt/3.Boxy Fit Denim Jackets.png" },
-          { name: "Zip-Front Denim Jacket", image: "/images/Denim Gallery/Denim Shirt/4.Zippered Denim Jackets.png" }
+          { name: "Flared Low-Waist Jeans", image: "/images/Denim Gallery/Denim Jeans/10Flared Low-Waist Jeans.png" }
         ]
       }
     ]
@@ -53,13 +40,8 @@ export const collections = {
           { name: "Corduroy Shirt", image: "/images/Shirt and Suit/5.Corduroy Shirts.png" },
           { name: "Cotton Twill Casual Shirt", image: "/images/Shirt and Suit/6.Twill Shirts.png" },
           { name: "Checked Flannel Shirt", image: "/images/Shirt and Suit/7.flannel.png" },
+          { name: "Satin Party Wear Shirt", image: "/images/Shirt and Suit/8.satin.png" },
           { name: "Western Denim Shirt", image: "/images/Shirt and Suit/9.canvas.png" }
-        ]
-      },
-      {
-        title: "Party & Tech Wear",
-        products: [
-          { name: "Satin Party Wear Shirt", image: "/images/Shirt and Suit/8.satin.png" }
         ]
       }
     ]

@@ -52,17 +52,23 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: "easeInOut" }}
           className="absolute inset-0 z-0"
         >
-          <Image
-            src={heroSlides[currentSlide].image}
-            alt="Manufacturing"
-            fill
-            sizes="100vw"
-            quality={100}
-            unoptimized
-            style={{ objectFit: "cover", objectPosition: "top center" }}
-            loading={currentSlide === 0 ? "eager" : "lazy"}
-            preload={currentSlide === 0}
-          />
+          <motion.div
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 5 }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={heroSlides[currentSlide].image}
+              alt="Manufacturing"
+              fill
+              sizes="100vw"
+              quality={95}
+              className="object-contain md:object-cover object-center md:object-top transition-all duration-1000"
+              loading={currentSlide === 0 ? "eager" : "lazy"}
+              priority={currentSlide === 0}
+            />
+          </motion.div>
           {/* Gradients */}
           <div className="absolute inset-0 bg-black/70 md:bg-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent hidden md:block" />
