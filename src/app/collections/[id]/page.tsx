@@ -157,12 +157,14 @@ export default async function CollectionPage(props: { params: Promise<{ id: stri
                     <h2 className="text-3xl md:text-4xl font-heading font-bold text-white uppercase tracking-tight">CATALOG</h2>
                   </div>
                   <div className="text-gray-500 font-heading tracking-widest">
-                    {(collection as any).products?.length || 0} ITEMS
+                    {/* @ts-expect-error - products fallback */}
+                    {collection.products?.length || 0} ITEMS
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                  {(collection as any).products?.map((product: any, idx: number) => (
+                  {/* @ts-expect-error - products fallback */}
+                  {collection.products?.map((product: { name: string; image?: string }, idx: number) => (
                     <div key={idx} className="group cursor-pointer">
                       <div className="aspect-[3/4] bg-[#0a0a0a] border border-white/5 mb-6 relative overflow-hidden flex items-center justify-center group-hover:border-white/20 transition-colors duration-500">
                         {product.image ? (

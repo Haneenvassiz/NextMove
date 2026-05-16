@@ -9,9 +9,12 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
+import Preloader from "@/components/Preloader";
+
 export default function Home() {
   return (
     <>
+      <Preloader />
       <Navbar />
       <Hero />
       <About />

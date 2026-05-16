@@ -7,27 +7,43 @@ import Image from "next/image";
 const heroSlides = [
   {
     id: 1,
-    image: "/images/Hero Section/hero section.webp",
-    title: "ELITE",
-    subtitle: "MANUFACTURING",
+    image: "/images/Hero Section/hero1_desktop.png",
+    mobileImage: "/images/Hero Section/hero1_mobile.png",
+    title: "THE GLOBAL",
+    subtitle: "MANUFACTURING HUB",
+    description: "Your direct gateway to Tier 1 production across India’s most advanced textile hubs. We don’t just source garments we build supply chains.",
   },
   {
     id: 2,
-    image: "/images/Hero Section/hero section 2.webp",
-    title: "GLOBAL",
-    subtitle: "EXPORT HUB",
+    image: "/images/Hero Section/hero2_desktop.png",
+    mobileImage: "/images/Hero Section/hero2_mobile.png",
+    title: "DIRECT FACTORY",
+    subtitle: "ACCESS ZERO MIDDLEMEN",
+    description: "Work directly with vetted Tier 1 manufacturers. Standardized quality control across every production stage from sampling to final delivery.",
   },
   {
     id: 3,
-    image: "/images/Hero Section/hero section 3.webp",
-    title: "PREMIUM",
-    subtitle: "QUALITY",
+    image: "/images/Hero Section/hero3_desktop.png",
+    mobileImage: "/images/Hero Section/hero3_mobile.png",
+    title: "CATEGORY",
+    subtitle: "DENIM & SHIRTS",
+    description: "Specialized manufacturing networks for high end denim executive shirting and retail grade activewear engineered for global markets.",
   },
   {
     id: 4,
-    image: "/images/Hero Section/hero section 4.webp",
-    title: "SCALABLE",
-    subtitle: "PRODUCTION",
+    image: "/images/Hero Section/hero4_desktop.png",
+    mobileImage: "/images/Hero Section/hero4_mobile.png",
+    title: "ELITE FACTORY",
+    subtitle: "SCALE FASTER",
+    description: "Access India’s most trusted production network and elevate your brand with engineered consistency and scalable capacity.",
+  },
+  {
+    id: 5,
+    image: "/images/Hero Section/hero5_desktop.png",
+    mobileImage: "/images/Hero Section/hero5_mobile.png",
+    title: "GLOBAL EXPORT",
+    subtitle: "PREMIUM QUALITY",
+    description: "The strategic sourcing partner behind modern apparel brands. We solve complexity with reliable timelines and Tier 1 access.",
   },
 ];
 
@@ -42,7 +58,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[100dvh] overflow-hidden bg-black flex items-center">
+    <section className="relative w-full min-h-[100dvh] overflow-hidden bg-black flex items-end md:items-center">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -53,41 +69,49 @@ export default function Hero() {
           className="absolute inset-0 z-0"
         >
           <motion.div
-            initial={{ scale: 1.1 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 5 }}
             className="absolute inset-0"
           >
-            <Image
-              src={heroSlides[currentSlide].image}
-              alt="Manufacturing"
-              fill
-              sizes="100vw"
-              quality={95}
-              className="object-contain md:object-cover object-center md:object-top transition-all duration-1000"
-              loading={currentSlide === 0 ? "eager" : "lazy"}
-              priority={currentSlide === 0}
-            />
+            {/* Desktop Image */}
+            <div className="hidden md:block absolute inset-0">
+              <Image
+                src={heroSlides[currentSlide].image}
+                alt="Manufacturing Desktop"
+                fill
+                sizes="100vw"
+                quality={95}
+                className="object-contain object-right transition-all duration-1000"
+                loading={currentSlide === 0 ? "eager" : "lazy"}
+                priority={currentSlide === 0}
+              />
+            </div>
+            {/* Mobile Image */}
+            <div className="block md:hidden absolute inset-0">
+              <Image
+                src={heroSlides[currentSlide].mobileImage}
+                alt="Manufacturing Mobile"
+                fill
+                sizes="100vw"
+                quality={90}
+                className="object-cover object-center transition-all duration-1000"
+                loading={currentSlide === 0 ? "eager" : "lazy"}
+                priority={currentSlide === 0}
+              />
+            </div>
           </motion.div>
           {/* Gradients */}
-          <div className="absolute inset-0 bg-black/70 md:bg-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent hidden md:block" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-black/40 md:bg-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent hidden md:block w-3/4" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="container mx-auto px-6 md:px-12 relative z-20 flex flex-col items-start justify-center h-full pt-20">
+      <div className="container mx-auto px-10 md:px-24 relative z-20 flex flex-col items-start justify-center h-full pt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="w-full md:w-1/2"
+          className="w-full md:w-3/5"
         >
-          <div className="flex items-center space-x-4 mb-4 md:mb-6">
-            <div className="w-8 md:w-12 h-[1px] bg-primary"></div>
-            <p className="text-primary tracking-widest text-xs md:text-sm font-medium">NEXT MOVE GROUP</p>
-          </div>
-
           <AnimatePresence mode="wait">
             <motion.h1
               key={`title-${currentSlide}`}
@@ -114,9 +138,18 @@ export default function Hero() {
             </motion.h2>
           </AnimatePresence>
 
-          <p className="text-gray-300 max-w-md mb-8 leading-relaxed text-xs md:text-base border-l border-white/20 pl-4 hidden sm:block">
-            Your gateway to elite manufacturing in India. We build premium apparel collections from startup to retail chains with a pan-India network.
-          </p>
+          <AnimatePresence mode="wait">
+            <motion.p
+              key={`desc-${currentSlide}`}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-gray-300 max-w-md mb-8 leading-relaxed text-xs md:text-base border-l border-white/20 pl-4 hidden sm:block"
+            >
+              {heroSlides[currentSlide].description}
+            </motion.p>
+          </AnimatePresence>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
             <a

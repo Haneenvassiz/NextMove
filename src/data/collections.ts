@@ -2,7 +2,7 @@ export const collections = {
   "denim-gallery": {
     title: "DENIM GALLERY",
     description: "Premium washed and tailored denim. Expertly crafted for global brands.",
-    image: "/images/Product Category/product category 1.webp",
+    image: "/images/Product Category/Denim Gallery 1.png",
     sections: [
       {
         title: "Denim Jeans",
@@ -23,7 +23,7 @@ export const collections = {
   "shirts-suiting": {
     title: "SHIRTS & SUITING",
     description: "Impeccable corporate and casual excellence with the finest fabrics.",
-    image: "/images/Product Category/product category 2.webp",
+    image: "/images/Product Category/shirt 1.png",
     sections: [
       {
         title: "Oxford Collection",
@@ -49,7 +49,7 @@ export const collections = {
   "knitwear-essentials": {
     title: "KNITWEAR & ESSENTIALS",
     description: "Everyday essentials crafted with precision and supreme comfort.",
-    image: "/images/Product Category/product category 3.webp",
+    image: "/images/Product Category/knitwears 1.png",
     sections: [
       {
         title: "T-Shirts & Tops",
@@ -83,7 +83,7 @@ export const collections = {
   "activewear-performance": {
     title: "ACTIVEWEAR & PERFORMANCE",
     description: "High-performance gear engineered for mobility and endurance.",
-    image: "/images/Product Category/product category 4.webp",
+    image: "/images/Product Category/activewears 1.png",
     sections: [
       {
         title: "Active Tops",
@@ -107,20 +107,15 @@ export const collections = {
   "uniform-hub": {
     title: "UNIFORM HUB",
     description: "Professional, medical, and industrial wear built to perform.",
-    image: "/images/Product Category/product category 5.webp",
+    image: "/images/Product Category/uniform hub 1.png",
     sections: [
       {
-        title: "Corporate & Industrial",
+        title: "Professional Uniforms",
         products: [
-          { name: "Industrial Workwear Uniform", image: "/images/Uniform Hub/1.Industrial corperation unifrom.png" },
-          { name: "Industrial Knitwear Uniform", image: "/images/Uniform Hub/2.Industrial Knitwear.png" },
-          { name: "Corporate Formal Shirt Set", image: "/images/Uniform Hub/3.Corporate Formal Shirts.png" }
-        ]
-      },
-      {
-        title: "Medical & Specialised",
-        products: [
-          { name: "Medical Scrub Set", image: "/images/Uniform Hub/4.Medical Scrub Suits.png" }
+          { name: "Industrial Workwear Uniform", image: "/images/Uniform Hub/1.Industrial corperation unifrom 1.png" },
+          { name: "Industrial Knitwear Uniform", image: "/images/Uniform Hub/2.Industrial Knitwear 1.png" },
+          { name: "Corporate Formal Shirt and Trousers", image: "/images/Uniform Hub/3.Corporate Formal Shirts and trousers 1.png" },
+          { name: "Medical Scrub Set", image: "/images/Uniform Hub/4.Medical Scrub Suits 1.png" }
         ]
       }
     ]

@@ -7,17 +7,22 @@ const aboutTabs = [
   {
     id: "overview",
     title: "Company Overview",
-    content: "Next Move Group is a premium apparel manufacturing network providing elite supply chain solutions. We operate a pan-India network of standardized facilities, seamlessly connecting global fashion brands, retail chains, and startups with reliable, high-quality production.",
+    content: "Next Move Group is a premium apparel manufacturing network providing elite supply chain solutions. We operate a pan India network of standardized facilities, seamlessly connecting global fashion brands, retail chains and startups with reliable high quality production.",
   },
   {
     id: "vision",
-    title: "Vision & Mission",
-    content: "Our mission is to democratize access to elite manufacturing. We aim to establish India as the ultimate global hub for premium apparel production by maintaining uncompromising quality, standardized processes, and complete transparency.",
+    title: "Our Vision",
+    content: "To establish India as the ultimate global hub for premium apparel production, defined by uncompromising quality, scalable capacity and total transparency across the supply chain.",
+  },
+  {
+    id: "mission",
+    title: "Our Mission",
+    content: "To democratize access to elite manufacturing by connecting modern apparel brands with India’s most trusted Tier 1 production networks through engineered consistency and end to end execution.",
   },
   {
     id: "why-india",
     title: "Why India",
-    content: "India offers an unparalleled ecosystem for apparel manufacturing—combining a rich heritage in textiles, a highly skilled workforce, and robust infrastructure. It provides scalable, cost-efficient, and sustainable production capabilities.",
+    content: "India offers an unparalleled ecosystem for apparel manufacturing combining a rich heritage in textiles, a highly skilled workforce and robust infrastructure. It provides scalable, cost efficient and sustainable production capabilities.",
   },
   {
     id: "network",
