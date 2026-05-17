@@ -13,22 +13,6 @@ export default function Footer() {
           <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
             Your Gateway to Elite Manufacturing in India. Pan-India manufacturing network with standardized QC.
           </p>
-          {/* Registration Trust Strip */}
-          <div className="border-t border-white/5 pt-4 mt-4">
-            <p className="text-xs text-gray-500 tracking-widest uppercase mb-3">
-              Government Registered Export Partner
-            </p>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
-              <div>
-                <span className="text-gray-500">IEC:</span>{" "}
-                <span className="text-gray-300 font-medium">EUHPM4454B</span>
-              </div>
-              <div>
-                <span className="text-gray-500">GSTIN:</span>{" "}
-                <span className="text-gray-300 font-medium">32EUHPM4454B1ZW</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Quick Links */}
@@ -38,7 +22,7 @@ export default function Footer() {
             <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors text-sm">About Us</Link></li>
             <li><Link href="/#partner" className="text-gray-400 hover:text-white transition-colors text-sm">Partner With Us</Link></li>
             <li><Link href="/#contact" className="text-gray-400 hover:text-white transition-colors text-sm">Contact</Link></li>
-            <li><a href="/Brochure.pdf" target="_blank" className="text-gray-400 hover:text-white transition-colors text-sm">Download Brochure</a></li>
+            <li><a href="/Brochure-compressed.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-sm">Download Brochure</a></li>
           </ul>
         </div>
 
@@ -47,7 +31,7 @@ export default function Footer() {
           <h4 className="text-white font-heading tracking-widest mb-6">CATEGORIES</h4>
           <ul className="space-y-3">
             <li><Link href="/collections/denim-gallery" className="text-gray-400 hover:text-white transition-colors text-sm">Denim Gallery</Link></li>
-            <li><Link href="/collections/shirts-suiting" className="text-gray-400 hover:text-white transition-colors text-sm">Shirts & Suiting</Link></li>
+            <li><Link href="/collections/shirts-suiting" className="text-gray-400 hover:text-white transition-colors text-sm">Formal & Casual Shirts</Link></li>
             <li><Link href="/collections/knitwear-essentials" className="text-gray-400 hover:text-white transition-colors text-sm">Knitwear & Essentials</Link></li>
             <li><Link href="/collections/activewear-performance" className="text-gray-400 hover:text-white transition-colors text-sm">Activewear & Performance</Link></li>
             <li><Link href="/collections/uniform-hub" className="text-gray-400 hover:text-white transition-colors text-sm">Uniform Hub</Link></li>
@@ -65,9 +49,16 @@ export default function Footer() {
                 Nannamukku PO, Malappuram DT, Kerala - 679575
               </a>
             </li>
-            <li className="text-gray-400 text-sm">Email: business@nextmovegroupexport.com</li>
-            <li className="text-gray-400 text-sm">Phone: +91 7592 008 008</li>
-            <li className="text-gray-400 text-sm">WhatsApp: +91 7593 005 006</li>
+            <li className="text-gray-400 text-sm mb-3">
+              <span className="block mb-1">Email:</span>
+              <a href="mailto:business@nextmovegroupexport.com" className="hover:text-white transition-colors break-all">business@nextmovegroupexport.com</a>
+            </li>
+            <li className="text-gray-400 text-sm mb-3">
+              Phone: <a href="tel:+917592008008" className="hover:text-white transition-colors">+91 7592 008 008</a>
+            </li>
+            <li className="text-gray-400 text-sm mb-3">
+              WhatsApp: <a href="https://wa.me/917593005006" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">+91 7593 005 006</a>
+            </li>
             <li className="flex items-center space-x-4 pt-2">
               <a href="https://www.linkedin.com/company/nextmovegroupexport/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>

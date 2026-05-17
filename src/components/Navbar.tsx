@@ -50,7 +50,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="/Brochure.pdf"
+            href="/Brochure-compressed.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 border border-white/20 hover:border-primary text-sm tracking-widest transition-colors"
@@ -96,7 +96,7 @@ export default function Navbar() {
               WHATSAPP US
             </a>
             <a
-              href="/Brochure.pdf"
+              href="/Brochure-compressed.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full text-center px-6 py-3 border border-white/20 hover:border-primary text-sm tracking-widest transition-colors"

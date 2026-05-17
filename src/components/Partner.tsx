@@ -44,14 +44,18 @@ export default function Partner() {
             <div className="w-8 md:w-12 h-[1px] bg-primary"></div>
           </div>
           
-          <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white leading-tight md:leading-none mb-6 md:mb-8 uppercase tracking-tight drop-shadow-2xl">
-            Build With <br className="sm:hidden" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-yellow-500 to-primary">The Best</span>
-          </h2>
-          
-          <p className="text-gray-200 text-base md:text-2xl font-light leading-relaxed max-w-3xl mx-auto mb-10 md:mb-12 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-            Your gateway to elite apparel manufacturing in India. We transform your concepts into premium, scalable realities.
-          </p>
+          <div className="flex flex-col items-center w-full mx-auto">
+            <h2 className="text-5xl md:text-7xl lg:text-8xl font-heading font-black text-white leading-[1.1] mb-10 uppercase tracking-tight drop-shadow-2xl text-center">
+              BUILD WITH <br className="md:hidden" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#ffd700] to-[#b8860b]">THE BEST</span>
+            </h2>
+            
+            <div className="w-full max-w-4xl mx-auto mb-12 px-4 text-center">
+              <p className="text-primary text-xs md:text-sm tracking-[0.3em] font-bold uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                Your gateway to elite apparel manufacturing in India
+              </p>
+            </div>
+          </div>
 
           <a
             href="https://wa.me/917593005006"

@@ -1,6 +1,13 @@
 "use client";
 
-import { MapPin, Mail, MessageCircle, Phone } from "lucide-react";
+import { MapPin, Mail, MessageCircle, Phone, Globe } from "lucide-react";
+import Image from "next/image";
+import dynamic from 'next/dynamic';
+
+const NetworkMap = dynamic(
+  () => import('./NetworkMap'),
+  { ssr: false }
+);
 
 export default function Contact() {
   return (
@@ -106,19 +113,47 @@ export default function Contact() {
                     </div>
                   </a>
 
-                  <a href="https://maps.app.goo.gl/yDurqbbH6M2SncWU8" target="_blank" rel="noopener noreferrer" className="flex items-start space-x-4 group">
-                    <div className="p-3 bg-white/5 group-hover:bg-primary/20 transition-colors">
-                      <MapPin className="text-white group-hover:text-primary transition-colors" size={24} />
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-500 tracking-widest mb-1">LOCATION</div>
-                      <div className="text-white tracking-wide leading-relaxed text-sm group-hover:text-primary transition-colors">
-                        5/248-B, 1st Floor, Sana Bazar,<br />
-                        Naranipuzha Road, Changaramkulam,<br />
-                        Nannamukku PO, Malappuram DT, Kerala - 679575
+                  <div className="pt-4 mt-4 border-t border-white/10">
+                    <div className="flex items-center space-x-3 mb-6">
+                      <div className="p-2 bg-white/10 rounded-full">
+                        <Globe className="text-white" size={20} />
                       </div>
+                      <div className="text-xs text-white font-bold tracking-[0.2em] uppercase">PAN INDIA MANUFACTURING NETWORK</div>
                     </div>
-                  </a>
+                    
+                    {/* India Map & Glowing Hubs (Leaflet Integration) */}
+                    <div className="relative w-full max-w-xl mx-auto aspect-[4/5] md:aspect-[16/11] mt-8 mb-4 overflow-hidden group border border-white/5 bg-[#050505] rounded-xl shadow-[inset_0_0_20px_rgba(0,0,0,0.5)]">
+                      
+                      <NetworkMap />
+                      
+                    </div>
+
+                    {/* Location Hyperlinks */}
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] sm:text-xs font-semibold tracking-wider uppercase">
+                      {[
+                        { name: "Delhi", url: "https://www.google.com/maps/place/Delhi" },
+                        { name: "Meerut", url: "https://www.google.com/maps/place/Meerut,+Uttar+Pradesh" },
+                        { name: "Ludhiana", url: "https://www.google.com/maps/place/Ludhiana,+Punjab" },
+                        { name: "Jalandhar", url: "https://www.google.com/maps/place/Jalandhar,+Punjab" },
+                        { name: "Bengaluru", url: "https://www.google.com/maps/place/Bengaluru,+Karnataka" },
+                        { name: "Tiruppur", url: "https://www.google.com/maps/place/Tiruppur,+Tamil+Nadu" }
+                      ].map((loc, idx, arr) => (
+                        <div key={idx} className="flex items-center">
+                          <a 
+                            href={loc.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition-colors flex items-center group/link"
+                          >
+                            <MapPin size={10} className="mr-1 opacity-50 group-hover/link:opacity-100" />
+                            {loc.name}
+                            <span className="inline-block ml-0.5 opacity-0 group-hover/link:opacity-100 transition-all -translate-y-0.5 group-hover/link:-translate-y-1 text-[10px]">↗</span>
+                          </a>
+                          {idx !== arr.length - 1 && <span className="text-white/10 ml-4 hidden sm:inline-block">|</span>}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -146,3 +181,5 @@ export default function Contact() {
     </section>
   );
 }
+
+

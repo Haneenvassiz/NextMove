@@ -7,15 +7,16 @@ import Image from "next/image";
 export default function Preloader() {
   const [loading, setLoading] = useState(true);
   const [step, setStep] = useState(0);
+  const [isFirstVisit, setIsFirstVisit] = useState(true);
 
   useEffect(() => {
-    // Check if preloader has already been shown in this session
-    const hasBeenShown = sessionStorage.getItem("preloaderShown");
-    if (hasBeenShown) {
-      setTimeout(() => setLoading(false), 0);
+    if (sessionStorage.getItem("preloaderShown") === "true") {
+      setIsFirstVisit(false);
+      setLoading(false);
       return;
     }
 
+    // Preloader sequence starts
     let animationDone = false;
     let windowLoaded = false;
 
@@ -59,8 +60,10 @@ export default function Preloader() {
   }, []);
 
   return (
-    <AnimatePresence>
-      {loading && (
+    <>
+      {isFirstVisit && (
+        <AnimatePresence>
+          {loading && (
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ 
@@ -141,6 +144,8 @@ export default function Preloader() {
           />
         </motion.div>
       )}
-    </AnimatePresence>
+        </AnimatePresence>
+      )}
+    </>
   );
 }

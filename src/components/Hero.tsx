@@ -161,7 +161,7 @@ export default function Hero() {
               WHATSAPP US
             </a>
             <a
-              href="/Brochure.pdf"
+              href="/Brochure-compressed.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white/30 text-white px-6 py-3 md:px-8 md:py-4 flex items-center justify-center font-bold tracking-widest text-sm hover:border-primary hover:text-primary transition-colors"

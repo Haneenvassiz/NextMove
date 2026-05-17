@@ -21,7 +21,7 @@ export const collections = {
     ]
   },
   "shirts-suiting": {
-    title: "SHIRTS & SUITING",
+    title: "FORMAL & CASUAL SHIRTS",
     description: "Impeccable corporate and casual excellence with the finest fabrics.",
     image: "/images/Product Category/shirt 1.png",
     sections: [

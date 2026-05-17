@@ -14,7 +14,7 @@ const categories = [
     color: "bg-primary/80", 
   },
   {
-    title: "Shirts & Suiting",
+    title: "Formal & Casual Shirts",
     shortDesc: "Elite Corporate Wear",
     images: ["/images/Product Category/shirt 1.png", "/images/Product Category/shirt 2.png"],
     path: "/collections/shirts-suiting",
@@ -83,7 +83,7 @@ export default function Categories() {
       </div>
 
       <div className="w-full">
-        <div className="flex flex-col md:flex-row w-full h-[800px] md:h-[700px]">
+        <div className="flex flex-col md:flex-row w-full md:h-[700px]">
           {categories.map((cat, idx) => {
             const isHovered = hoveredIndex === idx;
 
@@ -95,7 +95,7 @@ export default function Categories() {
                 transition={{ delay: idx * 0.1 }}
                 onMouseEnter={() => setHoveredIndex(idx)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="relative flex-1 group cursor-pointer overflow-hidden border-r border-white/5 last:border-r-0 transition-all duration-700 ease-in-out h-full"
+                className="relative flex-1 group cursor-pointer overflow-hidden border-b md:border-b-0 md:border-r border-white/5 last:border-b-0 md:last:border-r-0 transition-all duration-700 ease-in-out h-[350px] sm:h-[450px] md:h-full"
               >
                 <Link href={cat.path} className="block w-full h-full relative">
                   {/* Background Image */}
